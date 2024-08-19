@@ -63,4 +63,4 @@ jobs:
         path: .
 
     - name: Terraform Apply
-      run: terrafrom apply -auto-approve terraform.plan
+      run: terraform apply -auto-approve terraform.plan
