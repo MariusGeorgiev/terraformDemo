@@ -1,12 +1,8 @@
-name: 'Terraform Plan'
+name: 'Terraform Plan and Apply'
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-
-permissions:
-  contents: read
+  workflow_dispatch:
 
 env:
   ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
